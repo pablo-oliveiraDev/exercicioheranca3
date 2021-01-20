@@ -46,14 +46,16 @@ namespace exercicoHeranca3
                
 
             }
-
+            double total = 0.0;
             Console.WriteLine();
             Console.WriteLine("TAXES PAID:");
             foreach (TaxPayer payer in taxPayers)
             {
                 Console.WriteLine(payer.Name + " $ " + payer.Tax().ToString("F2", CultureInfo.InvariantCulture));
+                 total += payer.Tax();
             }
-
+            Console.WriteLine();
+            Console.WriteLine("double total: "+ total.ToString("F2",CultureInfo.InvariantCulture));
         }
     }
 }
