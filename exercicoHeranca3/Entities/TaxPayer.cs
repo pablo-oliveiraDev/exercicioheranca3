@@ -2,7 +2,7 @@
 
 namespace exercicoHeranca3.Entities
 {
-    abstract class TaxPayer
+    abstract class TaxPayer 
     {
         public string Name { get; set; }
         public double AnualIncome { get; set; }
